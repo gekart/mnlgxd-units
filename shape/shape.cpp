@@ -40,7 +40,6 @@
 
 #include "userosc.h"
 #include "shape.hpp"
-typedef __uint32_t uint32_t;
 
 static inline __attribute__((optimize("Ofast"), always_inline))
 float sinwf(float x) {

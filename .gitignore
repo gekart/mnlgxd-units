@@ -14,7 +14,7 @@
 # Temporary directories
 **/.dep/**
 **/build/**
-**/.vscode/**
+**/.vscode/ipch
 
 # Precompiled Headers
 *.gch
