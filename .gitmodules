@@ -1,5 +1,5 @@
 [submodule "logue-sdk"]
 	path = logue-sdk
 	url = https://github.com/korginc/logue-sdk.git
-        ignore = dirty
+    ignore = dirty
 
