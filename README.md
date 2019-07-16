@@ -11,8 +11,8 @@ Get the logue-cli from https://www.dropbox.com/s/kyjexw6l6ydxzi7/logue-cli-osx-0
 
 ## unit structure
 
-Units are kept each in its own folder with their own separate makefiles. By keeping multiple units in this project, you are effectively sharing the logue-sdk among them. Assign a slot to each unit's project.mk in order to automatically upload it to the synth.
+Units are kept each in its own folder with their own separate makefiles. By keeping multiple units in this project, you are effectively sharing the logue-sdk among them. Assign a slot to each unit's project.mk in order to automatically upload it to the synth. Slots are numbered 0-15.
 
 ## makefile
 
-A global makefile is located at the top level directory, that will execute each individual unit's makefile.
+A global makefile is located at the top level directory. Specify the names of your units by adding a blank separated list to the unit variable. Make will then execute each individual unit's makefile.
