@@ -143,34 +143,22 @@ void OSC_CYCLE(const user_osc_param_t * const params,
           sig = osc_sinf(phi0);
           break;
         case 1:
-          sig = sinwf(phi0);
-          break;
-        case 2:
           sig = osc_sawf(phi0);
           break;
-        case 3:
-          sig = sawdownf(phi0);
-          break;
-        case 4:          
-          sig = sawupf(phi0);
-          break;
-        case 5:          
+        case 2:          
           sig = osc_sqrf(phi0);
           break;
-        case 6:          
-          sig = squaredownf(phi0);
-          break;
-        case 7:          
-          sig = squareupf(phi0);
-          break;
-        case 8: {
-          const float z = s.dpwz;     
-          s.dpwz = osc_parf(phi0);
-          sig = s.dpwz - z;
-        }
-          break;
-        case 9:          
+        case 3:          
           sig = osc_white();
+          break;
+        case 4:          
+          sig = osc_parf(phi0);
+          break;
+        case 5: {
+            const float z = s.dpwz;     
+            s.dpwz = osc_parf(phi0);
+            sig = s.dpwz - z;
+          }
           break;
       }
     } else {

@@ -49,7 +49,7 @@
     k_waves_d_cnt,
     k_waves_e_cnt,
     k_waves_f_cnt,
-    10
+    6
   };
 
   const float* const*k_waves_table[7] = {
